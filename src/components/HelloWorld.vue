@@ -18,7 +18,7 @@
         <p class="subheading font-weight-regular">
           Check here your marks:
           <br />
-          <a id="check-anchor" href="#" target="_blank"
+          <a id="check-anchor" href="/checker" target="_blank"
             ><v-btn
               id="check-link-btn"
               class="mx-2"

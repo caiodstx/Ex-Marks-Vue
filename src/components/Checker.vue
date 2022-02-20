@@ -10,22 +10,14 @@
         />
       </v-col>
 
-      <p class="title font-weight-regular">
-        Check here your marks:
-        <br />
-        <a id="check-anchor" href="#" target="_blank"
-          ><v-btn
-            id="check-link-btn"
-            class="mx-2"
-            fab
-            dark
-            large
-            color="purple"
-          >
-            <v-icon dark> mdi-check </v-icon>
-          </v-btn></a
-        >
-      </p>
+      <v-col>
+        <v-text-field
+          :v-model="mark"
+          label="Enter your mark"
+          :rules="rules"
+          hide-details="auto"
+        ></v-text-field>
+      </v-col>
     </v-row>
   </v-container>
 </template>
@@ -34,8 +26,13 @@
 export default {
   name: "Checker",
   data: () => ({
-    //
+    mark: "",
   }),
+  methods: {
+    markChecker() {
+       
+    },
+  },
 };
 </script>
 
